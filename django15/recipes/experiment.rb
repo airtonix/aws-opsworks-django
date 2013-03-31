@@ -1,5 +1,5 @@
 user node[:django15][:user] do
   action :create
-  system true
-  shell "/bin/false"
+  home "/opt/#{node[:django15][:user]}"
+  shell "/bin/bash"
 end
